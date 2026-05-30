@@ -1,0 +1,32 @@
+.upgrade-card {
+    background-color: white;
+    border: 2px solid var(--success-vanilla-50);
+    border-radius: 12px;
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: 240px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.upgrade-text {
+    font: var(--font-caption-opensans-regular-16);
+    color: var(--text-dark-grey-100);
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.upgrade-card .main-button {
+    font: var(--font-body-opensans-semibold-18);
+    width: 100%;
+    min-width: unset;
+    padding: 0.75rem;
+    justify-content: center;
+    color: white;
+    outline: none !important;
+    border: none;
+}

@@ -1,0 +1,44 @@
+.text-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    font: var(--font-body-opensans-semibold-18);
+    color: var(--info-tan-75);
+    padding: 0.5rem 1rem; 
+    border-radius: 0.625rem;
+    height: 3rem;
+    white-space: nowrap;
+}
+
+.text-button:focus,
+.text-button:active,
+.text-button:hover {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.text-button.bordered {
+    border: 1px solid currentColor; 
+    background: transparent;
+}
+
+.text-button.tan {
+    color: var(--info-tan-100);
+}
+
+.text-button.dark {
+    color: var(--text-dark-grey-100); 
+}
+
+.text-button .icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.text-button.left {
+    flex-direction: row-reverse;
+}

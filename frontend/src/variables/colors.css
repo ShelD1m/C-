@@ -1,0 +1,37 @@
+:root {
+    --success-vanilla-25: rgba(212, 212, 133, 0.25);
+    --success-vanilla-50: rgba(212, 212, 133, 0.5);
+    --success-vanilla-75: rgba(212, 212, 133, 0.75);
+    --success-vanilla-100: rgba(212, 212, 133, 1);
+    --success-vanilla-hover: rgba(197, 197, 89, 1);
+
+    --background-sunset-25: rgba(243, 205, 144, 0.25);
+    --background-sunset-50: rgba(243, 205, 144, 0.5);
+    --background-sunset-75: rgba(243, 205, 144, 0.75);
+    --background-sunset-100: rgba(243, 205, 144, 1);
+
+    --info-tan-25: rgba(218, 183, 133, 0.25);
+    --info-tan-50: rgba(218, 183, 133, 0.5);
+    --info-tan-75: rgba(218, 183, 133, 0.75);
+    --info-tan-100: rgba(218, 183, 133, 1);
+    --info-tan-hover: rgba(203, 155, 87, 1);
+
+    --primary-moonstone-25: rgba(77, 167, 179, 0.25);
+    --primary-moonstone-50: rgba(77, 167, 179, 0.5);
+    --primary-moonstone-75: rgba(77, 167, 179, 0.75);
+    --primary-moonstone-100: rgba(77, 167, 179, 1);
+    --primary-moonstone-hover: rgba(61, 133, 143, 1);
+
+    --secondary-chine-rose-25: rgba(167, 89, 120, 0.25);
+    --secondary-chine-rose-50: rgba(167, 89, 120, 0.5);
+    --secondary-chine-rose-75: rgba(167, 89, 120, 0.75);
+    --secondary-chine-rose-100: rgba(167, 89, 120, 1);
+    --secondary-chine-rose-hover: rgba(134, 70, 96, 1);
+
+    --text-dark-grey-25: rgba(63, 63, 63, 0.25);
+    --text-dark-grey-50: rgba(63, 63, 63, 0.5);
+    --text-dark-grey-75: rgba(63, 63, 63, 0.75);
+    --text-dark-grey-100: rgba(63, 63, 63, 1);
+
+    --background-grey: rgb(244, 246, 248);
+}

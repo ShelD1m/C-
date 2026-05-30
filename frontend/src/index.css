@@ -1,0 +1,10 @@
+@import "./variables/colors.css";
+@import "./variables/typography.css";
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+#root {
+  width: 100%;
+}

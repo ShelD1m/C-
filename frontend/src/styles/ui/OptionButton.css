@@ -1,0 +1,18 @@
+.option-button {
+    font: var(--font-caption-opensans-regular-16), sans-serif;
+    color: var(--text-dark-grey-75);
+    background-color: transparent;
+    width: auto;
+    padding: 0.75rem;
+    border: 1px solid var(--text-dark-grey-75);
+    border-radius: 0.625rem;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-button:focus {
+    outline: none;
+    border-color: var(--text-dark-grey-100);
+}

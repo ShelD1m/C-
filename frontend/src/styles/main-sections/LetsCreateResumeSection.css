@@ -1,0 +1,72 @@
+.lets-create-section {
+    align-items: center;
+    width: 100%;
+    position: relative;
+    background: transparent;        
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.title {
+    font: var(--font-heading-firasans-bold-32);
+    color: var(--text-dark-grey-100);
+    margin: 0;
+}
+
+.subtitle {
+    font: var(--font-body-opensans-regular-24);
+    color: var(--text-dark-grey-100);
+    max-width: 60%;
+    text-align: center;
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputs{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}
+
+.blob-image {
+    max-width: 64rem;
+    max-height: 52rem;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 2rem;
+    }
+
+
+    .title {
+        white-space: normal;
+    }
+
+    .image {
+        min-width: 60%;
+        left: 50%;
+    }
+}

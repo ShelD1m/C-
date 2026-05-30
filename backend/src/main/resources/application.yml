@@ -1,0 +1,33 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: resume-plus-backend
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/resume_plus}
+    username: ${SPRING_DATASOURCE_USERNAME:resume_user}
+    password: ${SPRING_DATASOURCE_PASSWORD:resume_password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:change-this-secret-in-production-change-this-secret}
+    ttl-hours: ${JWT_TTL_HOURS:72}
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:4173,http://127.0.0.1:5173}
+  ai:
+    api-key: ${AI_API_KEY:}
+    provider-url: ${AI_PROVIDER_URL:}

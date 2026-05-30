@@ -1,0 +1,58 @@
+.resume-preview-aspect-wrapper {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.resume-edit-page {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    padding: 1rem 2rem 2rem;
+    background-color: white;
+    min-height: 100vh;
+    align-items: start;
+}
+
+.resume-edit-page-form {
+    background: white;
+    border-radius: 1rem;
+    overflow-y: auto;
+}
+
+.resume-edit-page-preview {
+    position: sticky;
+    top: 2rem;
+    align-self: flex-start;
+    height: fit-content;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 1rem;
+    border: 1px solid var(--primary-moonstone-100);
+    background: white;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-moonstone-75) transparent;
+}
+
+.resume-edit-page-preview::-webkit-scrollbar {
+    width: 8px;
+}
+
+.resume-edit-page-preview::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.resume-edit-page-preview::-webkit-scrollbar-thumb {
+    background: var(--primary-moonstone-75);
+    border-radius: 4px;
+}
+
+.resume-edit-page-preview::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-moonstone-100);
+}

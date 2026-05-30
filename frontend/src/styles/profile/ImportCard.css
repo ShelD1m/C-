@@ -1,0 +1,63 @@
+.import-card {
+    aspect-ratio: 1;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.import-card .card-icon {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.import-card .hh-icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.import-card .hh-icon {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.import-card .arrow-switch-icon {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.import-card .card-title {
+    font: var(--font-heading-firasans-semibold-16);
+    color: var(--text-dark-grey-100);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+
+.import-card .card-description {
+    font: var(--font-caption-opensans-regular-14);
+    color: var(--text-dark-grey-75);
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+}

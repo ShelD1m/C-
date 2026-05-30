@@ -1,0 +1,134 @@
+.personal-info-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.personal-info-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+    width: 100%;
+}
+
+.photo-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    max-width: 180px;
+}
+
+.photo-column .photo-upload {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo-column .photo-upload:hover {
+    transform: scale(1.05);
+}
+
+.fields-column {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.group-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    min-height: fit-content;
+}
+
+.group-column input,
+.group-column select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .photo-column {
+        max-width: 160px;
+    }
+
+    .photo-column .photo-upload {
+        max-width: 160px;
+        height: auto;
+    }
+
+    .fields-column {
+        max-width: 600px;
+    }
+
+    .group-column {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .personal-info-section {
+        padding: 1rem;
+    }
+
+    .personal-info-layout {
+        gap: 1rem;
+    }
+
+    .photo-column {
+        max-width: 120px;
+    }
+
+    .photo-column .photo-upload {
+        max-width: 120px;
+        height: 120px;
+        border-radius: 0.5rem;
+    }
+
+    .fields-column {
+        max-width: 100%;
+    }
+
+    .group-column {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .personal-info-section {
+        padding: 0.75rem;
+    }
+
+    .photo-column {
+        max-width: 100px;
+    }
+
+    .photo-column .photo-upload {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .group-column {
+        gap: 0.75rem;
+    }
+
+    .group-column input,
+    .group-column select {
+        font-size: 0.9rem;
+    }
+}

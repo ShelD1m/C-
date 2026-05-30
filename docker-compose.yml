@@ -1,0 +1,63 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: resume-plus-postgres
+    environment:
+      POSTGRES_DB: resume_plus
+      POSTGRES_USER: resume_user
+      POSTGRES_PASSWORD: resume_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - resume_plus_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U resume_user -d resume_plus"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+    container_name: resume-plus-backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/resume_plus
+      SPRING_DATASOURCE_USERNAME: resume_user
+      SPRING_DATASOURCE_PASSWORD: resume_password
+      JWT_SECRET: resume-plus-dev-secret-change-before-production
+      CORS_ALLOWED_ORIGINS: http://localhost:5173,http://127.0.0.1:5173
+      AI_API_KEY: ${AI_API_KEY:-}
+      AI_PROVIDER_URL: ${AI_PROVIDER_URL:-}
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: resume-plus-frontend
+    depends_on:
+      - backend
+    environment:
+      VITE_API_URL: http://localhost:8080/api
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+
+  pgadmin:
+    image: dpage/pgadmin4:8
+    container_name: resume-plus-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@resume.local
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+
+volumes:
+  resume_plus_pgdata:

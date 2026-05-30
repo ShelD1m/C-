@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Open+Sans:wght@400;500&family=Shantell+Sans:wght@400;500&display=swap');
+
+:root {
+    --font-heading-firasans-bold-72: 600 72px/1.4 "Fira Sans", sans-serif;
+    --font-heading-firasans-bold-40: 600 40px/1.4 "Fira Sans", sans-serif;
+    --font-heading-firasans-bold-32: 600 32px/1.4 "Fira Sans", sans-serif;
+    --font-heading-firasans-semibold-32: 500 32px/1.4 "Fira Sans", sans-serif;
+    --font-heading-firasans-semibold-28: 500 28px/1.4 "Fira Sans", sans-serif;
+    --font-heading-firasans-semibold-24: 500 24px/1.4 "Fira Sans", sans-serif;
+    --font-heading-firasans-semibold-20: 500 20px/1.4 "Fira Sans", sans-serif;
+    --font-heading-firasans-semibold-16: 500 16px/1.4 "Fira Sans", sans-serif;
+    --font-heading-firasans-semibold-italic-16: italic 500 16px/1.4 "Fira Sans", sans-serif;
+
+    --font-body-opensans-regular-24: 400 24px/1.4 "Open Sans", sans-serif;
+    --font-body-opensans-semibold-20: 500 20px/1.4 "Open Sans", sans-serif;
+    --font-body-opensans-semibold-18: 500 18px/1.4 "Open Sans", sans-serif;
+    --font-body-opensans-regular-18: 400 18px/1.4 "Open Sans", sans-serif;
+    --font-body-opensans-regular-italic-18: italic 400 18px/1.4 "Open Sans", sans-serif;
+
+    --font-caption-opensans-semibold-14: 500 14px/1.4 "Open Sans", sans-serif;
+    --font-caption-opensans-regular-14: 400 14px/1.4 "Open Sans", sans-serif;
+    --font-caption-opensans-regular-italic-14: italic 400 14px/1.4 "Open Sans", sans-serif;
+    --font-caption-opensans-regular-16: 400 16px/1.4 "Open Sans", sans-serif;
+
+    --font-accent-shantellsans-regular-96: 400 96px/1.4 "Shantell Sans", sans-serif;
+    --font-accent-shantellsans-regular-72: 400 72px/1.4 "Shantell Sans", sans-serif;
+    --font-accent-shantellsans-regular-60: 400 60px/1.4 "Shantell Sans", sans-serif;
+    --font-accent-shantellsans-regular-46: 400 46px/1.4 "Shantell Sans", sans-serif;
+    --font-accent-shantellsans-regular-40: 400 40px/1.4 "Shantell Sans", sans-serif;
+    --font-accent-shantellsans-regular-32: 400 32px/1.4 "Shantell Sans", sans-serif;
+    --font-accent-shantellsans-regular-24: 400 24px/1.4 "Shantell Sans", sans-serif;
+    --font-accent-shantellsans-regular-20: 400 20px/1.4 "Shantell Sans", sans-serif;
+    --font-accent-shantellsans-regular-14: 400 14px/1.4 "Shantell Sans", sans-serif;
+    --font-accent-shantellsans-semibold-italic-16: italic 500 16px/1.4 "Shantell Sans", sans-serif;
+}

@@ -1,0 +1,89 @@
+body {
+  overflow-x: hidden;
+  display: block; 
+}
+
+.signupin-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.arrow-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30vw;
+    margin-bottom: 1.5em;
+}
+
+.arrow-buttons .text-button {
+    flex: 1;
+    min-width: 15%;
+
+}
+
+.signupin-container {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signupin-form {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+    padding-top: 1px;
+}
+
+/* .h2 {
+    text-align: center;
+    color: black;
+    margin: 0;
+    font: var(--font-body-opensans-regular-18);
+    width: 100%;
+} */
+
+.signupin-form h2 {
+    text-align: center;
+    color: black;
+    margin: 0;
+    font: var(--font-body-opensans-regular-18);
+    width: 100%;
+}
+
+.social-login h2 {
+    text-align: center;
+    color: black;
+    margin: 0;
+    font: var(--font-body-opensans-regular-18);
+    width: 100%;
+}
+
+.input-fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.social-login {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.social-login .text-button {
+    width: 100%;
+}
+
+.signupin-form .main-button {
+    width: 100%;
+}

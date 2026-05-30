@@ -1,0 +1,32 @@
+.option-button-reversed {
+  font: var(--font-caption-opensans-regular-16), sans-serif;
+  color: var(--text-dark-grey-75);
+  background-color: transparent;
+  width: auto;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.option-button-reversed img {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  transition: transform 0.3s ease; 
+}
+
+.option-button-reversed .rotated {
+  transform: rotate(180deg); 
+}
+
+.option-button-reversed span {
+  margin: 0;
+}
+
+.option-button-reversed:focus {
+  outline: none;
+  color: var(--text-dark-grey-100);
+}

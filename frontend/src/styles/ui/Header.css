@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: transparent;
+    font: var(--font-caption-opensans-regular-14);
+    color: var(--text-dark-grey-100);
+    box-sizing: border-box;
+}
+
+
+.header-home,
+.header-secondary,
+.header-minimal {
+    background-color: transparent;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+    margin: 0 1.5rem;
+    width: auto;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.logo-text {
+    font: var(--font-accent-shantellsans-regular-40);
+    color: var(--primary-moonstone-100);
+}
+
+.dropdown-arrow {
+    font-size: 0.8rem;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}

@@ -1,0 +1,45 @@
+.main-button {
+  padding: 0.5rem 1rem;
+  font: var(--font-body-opensans-regular-18);
+  border: none;
+  border-radius: 0.625rem;
+  width: auto;
+  height: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-tan {
+  background-color: var(--info-tan-100);
+}
+
+.btn-tan:hover {
+  background-color: var(--info-tan-hover);
+}
+
+.btn-moonstone {
+  background-color: var(--primary-moonstone-100);
+}
+
+.btn-moonstone:hover {
+  background-color: var(--primary-moonstone-hover);
+}
+
+.btn-rose {
+  background-color: var(--secondary-chine-rose-100);
+}
+
+.btn-rose:hover {
+  background-color: var(--secondary-chine-rose-hover);
+}
+
+.btn-vanilla {
+  background-color: var(--success-vanilla-100);
+}
+
+.btn-vanilla:hover {
+  background-color: var(--success-vanilla-hover);
+}

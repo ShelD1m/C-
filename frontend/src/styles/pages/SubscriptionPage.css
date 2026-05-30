@@ -1,0 +1,15 @@
+.subscription-page-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #d1d485 0%, #a75978 100%);
+}
+
+@media (max-width: 900px) {
+  .subscription-page-layout {
+    padding: 20px 16px;
+  }
+}
