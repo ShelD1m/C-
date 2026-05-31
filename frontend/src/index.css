@@ -1,8 +1,35 @@
 @import "./variables/colors.css";
 @import "./variables/typography.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  color: var(--text-dark-grey-100);
+  background:
+    radial-gradient(circle at 12% 12%, rgba(136, 204, 255, 0.34), transparent 28rem),
+    radial-gradient(circle at 88% 6%, rgba(34, 129, 214, 0.18), transparent 26rem),
+    linear-gradient(180deg, #f5fbff 0%, #f7fbfb 48%, #edf7ff 100%);
+  overflow-x: hidden;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
 }
 
 #root {

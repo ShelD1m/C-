@@ -1,29 +1,31 @@
 .input-field {
-    width: auto;
-    padding: 0.75rem;
-    border-radius: 0.625rem;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border-radius: 1rem;
     font: var(--font-caption-opensans-regular-16);
     outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .gray {
-    background-color: white;
-    color: var(--text-dark-grey-75);
-    border: 1px solid var(--text-dark-grey-75);
-    margin: 0
+    background-color: rgba(255, 255, 255, 0.86);
+    color: var(--text-dark-grey-100);
+    border: 1px solid var(--surface-border);
+    margin: 0;
 }
 
 .gray::placeholder {
-    color: var(--text-dark-grey-75);
+    color: var(--text-dark-grey-50);
 }
 
 .input-field.gray:focus {
-    border-color: var(--text-dark-grey-100);
+    border-color: var(--primary-moonstone-75);
+    box-shadow: 0 0 0 4px var(--primary-moonstone-25);
 }
 
 .colorful {
     background-color: var(--background-sunset-25);
-    color: var(--info-tan-75);
+    color: var(--info-tan-hover);
     border: 1px solid var(--info-tan-75);
 }
 
@@ -33,4 +35,5 @@
 
 .input-field.colorful:focus {
     border-color: var(--info-tan-100);
+    box-shadow: 0 0 0 4px rgba(46, 142, 214, 0.16);
 }

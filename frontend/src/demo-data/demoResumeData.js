@@ -1,9 +1,9 @@
 export const demoResumeData = {
     personal: {
-        photo: "https://avatars.mds.yandex.net/i?id=2615197f205f9a4b2cedba4082b024b3b1808649-5245175-images-thumbs&n=13",
-        firstName: "Анна",
-        lastName: "Коваленко",
-        middleName: "Сергеевна",
+        photo: "sections/img.jpg",
+        firstName: "Виктор",
+        lastName: "Ягодов",
+        middleName: "Вениаминович",
         birthDate: "1995-03-14",
         country: "Россия",
         city: "Санкт-Петербург",
@@ -11,11 +11,11 @@ export const demoResumeData = {
     },
     contacts: {
         phone: "+7 (999) 123-45-67",
-        email: "anna.kovalenko@example.com",
+        email: "viktor.yagodov@example.com",
         social: [
-            {type: "Telegram", link: "https://t.me/annadev"},
-            {type: "GitHub", link: "https://github.com/annadev"},
-            {type: "LinkedIn", link: "https://linkedin.com/in/anna-kovalenko"}
+            {type: "Telegram", link: "https://t.me/vikdev"},
+            {type: "GitHub", link: "https://github.com/vikdev"},
+            {type: "LinkedIn", link: "https://linkedin.com/in/viktor-yagodov"}
         ]
     },
     experience: [

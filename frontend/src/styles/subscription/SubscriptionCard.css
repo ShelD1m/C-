@@ -1,14 +1,16 @@
 .subscription-card {
   display: flex;
-  max-width: 960px;
+  max-width: 980px;
   width: 100%;
-  background-color: #ffffff;
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 28px;
   padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--soft-shadow);
   gap: 40px;
   box-sizing: border-box;
   position: relative;
+  backdrop-filter: blur(16px);
 }
 
 .card-left {
@@ -28,6 +30,7 @@
 .logo-premium {
   width: 48px;
   height: 48px;
+  filter: drop-shadow(0 10px 20px rgba(34, 129, 214, 0.18));
 }
 
 .premium-text {
@@ -37,18 +40,23 @@
 
 .premium-highlight {
   font: var(--font-accent-shantellsans-regular-24);
-  color: var(--primary-moonstone-100);
+  color: var(--secondary-chine-rose-100);
 }
 
 .price-section {
   margin-bottom: 24px;
   text-align: left;
+  padding: 1.25rem;
+  border-radius: 1.4rem;
+  background: linear-gradient(145deg, rgba(240, 248, 255, 0.96), rgba(255, 255, 255, 0.82));
+  border: 1px solid var(--surface-border);
 }
 
 .price {
   font: var(--font-heading-firasans-bold-40);
   color: var(--text-dark-grey-100);
   margin: 0 0 8px 0;
+  letter-spacing: -0.03em;
 }
 
 .price-desc {
@@ -68,6 +76,9 @@
   display: flex;
   gap: 12px;
   margin-bottom: 24px;
+  padding: 0.35rem;
+  border-radius: 999px;
+  background: rgba(37, 45, 55, 0.05);
 }
 
 .card-left .main-button {
@@ -76,7 +87,7 @@
 
 .card-divider {
   width: 1px;
-  background-color: rgba(63, 63, 63, 0.15);
+  background-color: rgba(37, 45, 55, 0.12);
 }
 
 .card-right {
@@ -85,9 +96,10 @@
 }
 
 .features-title {
-  font: var(--font-heading-firasans-semibold-20);
+  font: var(--font-heading-firasans-semibold-24);
   color: var(--text-dark-grey-100);
   margin: 0 0 4px 0;
+  letter-spacing: -0.02em;
 }
 
 .features-subtitle {
@@ -102,7 +114,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .feature-item {
@@ -110,6 +122,10 @@
   align-items: center;
   font: var(--font-caption-opensans-regular-16);
   color: var(--text-dark-grey-100);
+  padding: 0.75rem;
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.62);
+  border: 1px solid rgba(255,255,255,0.78);
 }
 
 .feature-item img:first-child {

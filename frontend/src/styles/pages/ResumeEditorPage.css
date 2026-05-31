@@ -10,31 +10,37 @@
 
 .resume-edit-page {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 2rem;
-    padding: 1rem 2rem 2rem;
-    background-color: white;
+    grid-template-columns: minmax(360px, 0.95fr) minmax(480px, 1.35fr);
+    gap: 1.5rem;
+    padding: 1.5rem 2rem 2rem;
+    background:
+      radial-gradient(circle at 2% 10%, rgba(136, 204, 255, 0.24), transparent 24rem),
+      linear-gradient(180deg, #f5fbff 0%, #f7fbfb 100%);
     min-height: 100vh;
     align-items: start;
 }
 
 .resume-edit-page-form {
-    background: white;
-    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid var(--surface-border);
+    border-radius: 1.5rem;
+    padding: 1rem;
     overflow-y: auto;
+    box-shadow: var(--small-shadow);
 }
 
 .resume-edit-page-preview {
     position: sticky;
-    top: 2rem;
+    top: 1.5rem;
     align-self: flex-start;
     height: fit-content;
-    max-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 3rem);
     overflow-y: auto;
     overflow-x: hidden;
-    border-radius: 1rem;
-    border: 1px solid var(--primary-moonstone-100);
-    background: white;
+    border-radius: 1.5rem;
+    border: 1px solid var(--surface-border);
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: var(--soft-shadow);
     box-sizing: border-box;
     scrollbar-width: thin;
     scrollbar-color: var(--primary-moonstone-75) transparent;
@@ -55,4 +61,17 @@
 
 .resume-edit-page-preview::-webkit-scrollbar-thumb:hover {
     background: var(--primary-moonstone-100);
+}
+
+@media (max-width: 1050px) {
+    .resume-edit-page {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .resume-edit-page-preview {
+        position: relative;
+        top: 0;
+        max-height: none;
+    }
 }

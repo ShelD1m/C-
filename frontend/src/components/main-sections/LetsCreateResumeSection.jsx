@@ -11,19 +11,24 @@ export default function LetsCreateResumeSection() {
             <div className="image">
                 <img
                     src={blobImage}
-                    alt="Декоративная лужа"
+                    alt="Декоративная форма"
                     className="blob-image"
                 />
             </div>
 
             <div className="content">
+                <span className="hero-badge">Конструктор резюме нового поколения</span>
                 <h1 className="title">
                     Будущее работы начинается с твоего резюме
                 </h1>
                 <p className="subtitle">
-                    Используй Резюме+ и у тебя будет простой способ выделиться и покорить работодателей
+                    Собери аккуратное резюме, выбери стильный шаблон и быстро подготовь документ для отклика на вакансию.
                 </p>
-                <div className="form">
+                <div className="form hero-card">
+                    <div className="hero-card-header">
+                        <span>Быстрый старт</span>
+                        <small>2 поля, чтобы начать</small>
+                    </div>
                     <div className="inputs">
                         <InputField
                             placeholder="Имя"
@@ -34,13 +39,18 @@ export default function LetsCreateResumeSection() {
                             variant="gray"
                         />
                     </div>
+                    <Link to="/edit" style={{ textDecoration: "none" }}>
+                        <MainButton
+                            text="Сгенерировать"
+                            variant="tan"
+                        />
+                    </Link>
                 </div>
-                <Link to="/edit" style={{ textDecoration: "none" }}>
-                    <MainButton
-                        text="Сгенерировать"
-                        variant="tan"
-                    />
-                </Link>
+                <div className="hero-points" aria-label="Преимущества сервиса">
+                    <span>AI-подсказки</span>
+                    <span>Шаблоны</span>
+                    <span>Экспорт</span>
+                </div>
             </div>
         </section>
     );

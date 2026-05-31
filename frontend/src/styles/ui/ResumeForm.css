@@ -259,3 +259,29 @@
     margin-top: 2rem;
     padding: 0 1rem;
 }
+/* Modern redesign overrides */
+.resume-form .section,
+.section {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid var(--surface-border);
+    border-radius: 1.35rem;
+    box-shadow: var(--small-shadow);
+}
+
+.section-header {
+    color: var(--primary-moonstone-100);
+}
+
+.group-label {
+    color: var(--primary-moonstone-100);
+}
+
+.section-item-white {
+    border: 1px solid var(--surface-border);
+    border-radius: 1rem;
+    box-shadow: 0 8px 22px rgba(32, 39, 49, 0.05);
+}
+
+.dropdown-container, .input-container, .input-container > * {
+    border-radius: 1rem;
+}

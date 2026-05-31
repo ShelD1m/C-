@@ -1,24 +1,61 @@
 .stage-card {
-    max-width: 24.5rem;
+    position: relative;
     width: 100%;
-    /*background: var(--primary-moonstone-75);*/
-    background: var(--primary-moonstone-100);
-    border-radius: 2.5rem;
-
+    min-height: 19rem;
+    background: rgba(255, 255, 255, 0.76);
+    border: 1px solid var(--surface-border);
+    border-radius: 1.75rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    color: white;
+    align-items: flex-start;
+    text-align: left;
+    color: var(--text-dark-grey-100);
     box-sizing: border-box;
+    gap: 1rem;
+    padding: 1.5rem;
+    box-shadow: var(--small-shadow);
+    overflow: hidden;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
 
-    gap: 1.875rem;
-    padding: 3.75rem 1rem;
+.stage-card::before {
+    content: "";
+    position: absolute;
+    inset: auto -3rem -4rem auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: var(--primary-moonstone-25);
+}
+
+.stage-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--soft-shadow);
+    border-color: var(--primary-moonstone-50);
+}
+
+.stage-number {
+    align-self: flex-end;
+    color: var(--secondary-chine-rose-100);
+    font: var(--font-heading-firasans-semibold-24);
+}
+
+.stage-icon-wrap {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-moonstone-100), #2a9daf);
+    box-shadow: 0 12px 28px rgba(27, 110, 124, 0.18);
 }
 
 .stage-card .icon {
+    width: 2.2rem;
+    height: 2.2rem;
     object-fit: contain;
+    filter: brightness(0) invert(1);
 }
 
 .stage-card p {
@@ -27,9 +64,12 @@
 
 .stage-card .stage-title {
     font: var(--font-body-opensans-semibold-20);
+    letter-spacing: 0.02em;
 }
 
 .stage-card .description {
     font: var(--font-body-opensans-regular-18);
+    color: var(--text-dark-grey-75);
     max-width: 21rem;
+    line-height: 1.55;
 }

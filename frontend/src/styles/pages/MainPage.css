@@ -1,11 +1,15 @@
 .main-page {
-  background-color: var(--background-sunset-25);
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 8%, rgba(136, 204, 255, 0.32), transparent 26rem),
+    radial-gradient(circle at 90% 16%, rgba(34, 129, 214, 0.16), transparent 30rem),
+    linear-gradient(180deg, #f5fbff 0%, #f8fcfc 48%, #edf7ff 100%);
 }
 
 .lets-create-section {
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 .creation-stages-section {
-  margin: 4rem 0;
+  margin: 5rem 0 4rem;
 }

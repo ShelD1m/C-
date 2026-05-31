@@ -1,31 +1,47 @@
 .creation-stages-section {
-    width: 100%;
-    height: 40rem;
+    width: min(1180px, calc(100% - 2rem));
+    min-height: 34rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
-
-    padding: 0 7.75rem;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
     box-sizing: border-box;
-
     text-align: center;
     background: transparent;
 }
 
+.creation-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.creation-stages-section .section-kicker {
+    color: var(--primary-moonstone-100);
+    background: var(--primary-moonstone-25);
+}
+
 .creation-stages-section .section-title {
-    font: var(--font-heading-firasans-bold-32);
+    font: var(--font-heading-firasans-bold-40);
     color: var(--text-dark-grey-100);
     margin: 0;
+    letter-spacing: -0.035em;
 }
 
 .creation-stages-section .stages {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    gap: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
     width: 100%;
     margin: 0 auto;
-    flex-wrap: nowrap;
+}
+
+@media (max-width: 920px) {
+    .creation-stages-section .stages {
+        grid-template-columns: 1fr;
+    }
 }

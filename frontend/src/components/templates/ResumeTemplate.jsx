@@ -14,8 +14,8 @@ const ResumeTemplate = ({data, template}) => {
     return (
         <div className={`resume-template resume-template--${template}`}>
             <header className="resume-header">
-                {personal.photo && (
-                    <img src={personal.photo} alt="Фото" className="avatar"/>
+                {(
+                    <img src="img.png" alt="Фото" className="avatar"/>
                 )}
 
                 <div className="info">

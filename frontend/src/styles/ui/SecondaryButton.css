@@ -1,47 +1,50 @@
 .secondary-button {
-    padding: 0.5rem 1rem;
-    font: var(--font-body-opensans-regular-18);
+    padding: 0.68rem 1.1rem;
+    font: var(--font-body-opensans-semibold-18);
     width: auto;
-    height: 3rem;
-    background-color: transparent;
+    min-height: 3rem;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.72);
     border-style: solid;
-    border-width: 0.2rem;
-    border-radius: 0.625rem;
+    border-width: 1px;
+    border-radius: 999px;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.secondary-button:hover {
+    transform: translateY(-2px);
+    background-color: white;
 }
 
 .sec-btn-tan {
-    color: var(--info-tan-100);
-    border-color: var(--info-tan-100);
+    color: var(--info-tan-hover);
+    border-color: var(--info-tan-75);
 }
 
 .sec-btn-tan:hover {
     color: var(--info-tan-hover);
     border-color: var(--info-tan-hover);
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .sec-btn-rose {
-    border-width: 0.1rem;
     color: var(--secondary-chine-rose-100);
-    border-color: var(--secondary-chine-rose-100);
+    border-color: var(--secondary-chine-rose-50);
 }
 
 .sec-btn-rose:hover {
-    border-width: 0.15rem;
     color: var(--secondary-chine-rose-hover);
     border-color: var(--secondary-chine-rose-hover);
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .sec-btn-gray {
-    border-width: 0.1rem;
-    color: var(--text-dark-grey-50);
-    border-color: var(--text-dark-grey-50);
+    color: var(--text-dark-grey-75);
+    border-color: var(--text-dark-grey-25);
 }
 
 .sec-btn-gray:hover {
-    border-width: 0.15rem;
-    color: var(--text-dark-grey-75);
-    border-color: var(--text-dark-grey-75);
-    font-weight: bold;
+    color: var(--text-dark-grey-100);
+    border-color: var(--text-dark-grey-50);
+    font-weight: 500;
 }

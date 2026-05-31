@@ -1,45 +1,55 @@
 .main-button {
-  padding: 0.5rem 1rem;
-  font: var(--font-body-opensans-regular-18);
+  padding: 0.75rem 1.25rem;
+  font: var(--font-body-opensans-semibold-18);
   border: none;
-  border-radius: 0.625rem;
+  border-radius: 999px;
+  min-width: 0;
   width: auto;
-  height: 3rem;
+  min-height: 3rem;
+  height: auto;
   color: white;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  box-shadow: 0 12px 24px rgba(32, 39, 49, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.main-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(32, 39, 49, 0.16);
 }
 
 .btn-tan {
-  background-color: var(--info-tan-100);
+  background: linear-gradient(135deg, var(--info-tan-100), #74bdf0);
 }
 
 .btn-tan:hover {
-  background-color: var(--info-tan-hover);
+  background: linear-gradient(135deg, var(--info-tan-hover), #4f9ee4);
 }
 
 .btn-moonstone {
-  background-color: var(--primary-moonstone-100);
+  background: linear-gradient(135deg, var(--primary-moonstone-100), #2390a1);
 }
 
 .btn-moonstone:hover {
-  background-color: var(--primary-moonstone-hover);
+  background: linear-gradient(135deg, var(--primary-moonstone-hover), #1c7786);
 }
 
 .btn-rose {
-  background-color: var(--secondary-chine-rose-100);
+  background: linear-gradient(135deg, var(--secondary-chine-rose-100), #7cb0ff);
 }
 
 .btn-rose:hover {
-  background-color: var(--secondary-chine-rose-hover);
+  background: linear-gradient(135deg, var(--secondary-chine-rose-hover), #4b8de8);
 }
 
 .btn-vanilla {
-  background-color: var(--success-vanilla-100);
+  background: linear-gradient(135deg, var(--success-vanilla-100), #b9e0fb);
+  color: var(--text-dark-grey-100);
 }
 
 .btn-vanilla:hover {
-  background-color: var(--success-vanilla-hover);
+  background: linear-gradient(135deg, var(--success-vanilla-hover), #96cbf4);
 }
